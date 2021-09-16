@@ -1,12 +1,12 @@
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('');
+const newsapi = new NewsAPI('API KEY');
 const express = require('express');
 const axios = require('axios');
 const app = express();
 const path = require('path');
 let IPinfo = require("node-ipinfo");
 
-let token = "4078bcee81eb53"
+let token = "My Token"
 let ip = ""
 let asn = "AS7922";
 let ipinfo = new IPinfo(token);
@@ -55,7 +55,7 @@ const { info } = require('console');
 
     // ************Weather API call ***********************
     
-    axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=`)
+    axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=API KEY`)
 
   
                .then( (report) => {
