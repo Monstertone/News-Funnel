@@ -1,5 +1,5 @@
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('6560880c487746438fe80efea6edbe2d');
+const newsapi = new NewsAPI('');
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -55,7 +55,7 @@ const { info } = require('console');
 
     // ************Weather API call ***********************
     
-    axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=ff97ea3bdc0abd998fa94699ae7187cc`)
+    axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=`)
 
   
                .then( (report) => {
