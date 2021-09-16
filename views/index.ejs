@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- *******************old font**************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet"> 
+   <!-- ********************************************** -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   <!-- ******************end of Google font ********************** -->
+    <link href="/style/style.css" rel="stylesheet" type="text/css">
+    <title>News Funnel</title>
+</head>
+<header class='title'>
+
+    <div class="header-items">  <h1>NEWS FUNNEL</h1></div>
+  
+   <span class="border"></span>
+</header>
+     
+
+<body>
+
+
+    
+
+    <main>
+        <div class="left">
+            <p>Left content goes here</p>
+        </div>
+        <div class="center">
+            <% for (let story of headlines) {%>
+    
+                <ul>
+         
+                 <li> 
+                        <div class="story-item">
+
+                            <% let dog = story.urlToImage%> 
+                            <% if (dog === null) {
+                                dog = "/img/news2.jpg"
+                            }  %>  
+                                  
+                            <%console.log(dog)%>
+
+                            
+                                <img src="<%=dog%>" alt="" class="story-img" >
+
+
+                            <div class="story-info">
+                                
+                                    <p class="story-title"><%=story.title%></p>
+
+                                    <hr class="title-hr">
+    
+                                      <p class="description"><%=story.description%> </p>
+                                    <a class="story-link" href="<%=story.url%> ">Full Story</a>
+                                    <%=story.publishedAt.slice(0,10)%> 
+                                 
+    
+                            </div>
+                         </div>
+
+              
+                </li>
+                 <!-- <hr> -->
+                </ul>
+             <% } %>  
+        </div>
+        <div class="right">
+            Weather goes here
+        </div>
+
+    </main>
+
+
+
+         
+     
+ 
+      
+
+</body>
+</html>

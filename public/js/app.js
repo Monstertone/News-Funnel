@@ -1,0 +1,1 @@
+tempImg = storie.img;

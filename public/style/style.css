@@ -1,0 +1,139 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items:top;
+    justify-content: center;
+    padding-top: 15px;
+    
+
+}
+
+.left {
+    /* background-color: chartreuse; */
+    min-width: 150px;
+    border: 1px solid black;
+    
+}
+
+.center {
+    max-width: 800px;
+    /* border: 1px solid blue; */
+}
+.right {
+    /* border: 1px solid black; */
+    width: 150px;
+    margin-left: 30px;
+    background-color:  #cce6ff;
+    /* background-color: #e6f3ff; */
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 25px;
+
+}
+
+li {
+    /* border: 1px solid #333;
+    padding: 3px; */
+}
+
+.story-item {
+    display: flex;
+    /* padding: 5px; */
+    height: 200px; 
+}
+
+.story-title {
+    padding-top: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Roboto', sans-serif;
+    margin: 3px 5px;
+}
+
+.title-hr {
+    width: 90%
+}
+
+.story-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    background-color: #d9d9d9;
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.story-img {
+   
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+    max-width: 250px;
+}
+
+.description {
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 2px 5px
+}
+
+
+header {
+
+ margin-bottom: 20px;
+ color: #fff;
+ background-color: #262626;
+ 
+} 
+
+.header-items {
+     display: flex;
+ justify-content: center;
+}
+
+.title {
+    border-bottom: 1px solid black;
+}
+
+.title span {
+    /* width:auto; */
+    margin-bottom: 4px;
+    border-bottom: 5px solid black;
+    display: block;
+}
+
+.logoimg {
+    height: 150px;
+    padding-top: 15px;
+}
+
+h1 {
+    margin: 25px 40px;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-style: italic; */
+    font-size: 65px;
+}
+
+.story-link {
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #333;
+    padding: 2px 5px;
+    text-decoration: none;
+    width: 70px;
+
+}
+
+.story-link:hover {
+    color: #000;
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
